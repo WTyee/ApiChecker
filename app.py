@@ -2,8 +2,8 @@ import os
 from flask import Flask, render_template_string, request, jsonify, session
 
 # --- CONFIGURATION ---
-SECRET_KEY = os.environ.get("SECRET_KEY", "a_very_strong_secret_key_for_apihub_12345")
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "ElderChk_Bot") # Aapka bot username
+SECRET_KEY = os.environ.get("SECRET_KEY")
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "TyeCheckerBot") # Aapka bot username
 
 # --- FLASK APP INITIALIZATION ---
 app = Flask(__name__)
